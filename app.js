@@ -67,3 +67,13 @@ function checkPalindrome(date){
         }
     }
 }
+
+function formHandeller(e){
+    e.preventDefault();
+    console.log("submitted")
+}
+
+let inputDate=document.getElementById("input-date")
+let form=document.querySelector("form");
+form.addEventListener("submit",formHandeller);
+
