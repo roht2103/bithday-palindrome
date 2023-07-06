@@ -67,5 +67,3 @@ function checkPalindrome(date){
         }
     }
 }
-
-checkPalindrome(date)
