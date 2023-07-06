@@ -197,12 +197,15 @@ function formHandeller(e) {
     console.log(result);
     if (result) {
       console.log("palindrome");
-      output.innerHTML = "Yay! Your birthday is palindrome";
+      output.innerHTML = "Yay!🤩Your birthday 🎂 is palindrome";
     } else {
       let [counter, nextDate] = getNextPalindromeDate(date);
       let [ctr, previousDate] = getPreviousPalindromeDate(date);
-
-      output.innerText = `OOOPS! your birthday is not Palindrome.😥 Next date is ${nextDate.day} / ${nextDate.month} /${nextDate.year} , it will come in next ${counter} days!✨ & Previous date was ${previousDate.day} / ${previousDate.month} /${previousDate.year} , is gon by ${ctr} days!✨`;
+      if (counter<ctr) {
+      output.innerText = `OOOPS! your birthday is not Palindrome.😥 Next date is ${nextDate.day} / ${nextDate.month} /${nextDate.year} , it will come in next ${counter} days!✨`;
+      }else{
+        output.innerText=`OOOPS! your birthday is not Palindrome.😥Previous date was ${previousDate.day} / ${previousDate.month} /${previousDate.year} , is gon by ${ctr} days!✨`
+      }
     }
   }
 }

@@ -24,7 +24,7 @@
 
 .container p{
     /* border: 1px solid; */
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
 
     font-size: 1.3rem;
@@ -61,7 +61,7 @@
     margin: 1rem;
     text-align: center;
     padding: 1rem;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     height: fit-content;
     width: fit-content;
 }
