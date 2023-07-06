@@ -7,12 +7,15 @@ function reverseStr(str){
 
 function isPalindrome(str){
     let rev=reverseStr(str);
-    return rev===str?true:false;
+    return rev===str;
 }
+
+let result;
+console.log(result);
 let date={
-    day:12,
+    day:2,
     month:2,
-    year:2022
+    year:2020
 }
 function convertDateIntoString(date){
     if (date.day<10) {
@@ -51,3 +54,18 @@ function getAllDateFormats(date){
 
     return [ddmmyyyy,mmddyyyy,yyyymmdd,ddmmyy,mmddyy,yymmdd]
 }
+
+function checkPalindrome(date){
+    let allFormatDates=getAllDateFormats(date);
+    console.log(allFormatDates);
+    for (let index = 0; index < allFormatDates.length; index++) {
+        result=isPalindrome(allFormatDates[index])
+        console.log(result);
+        console.log(index);
+        if (result==true) {
+            break
+        }
+    }
+}
+
+checkPalindrome(date)
