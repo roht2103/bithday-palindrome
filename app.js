@@ -4,3 +4,8 @@ function reverseStr(str){
     let reverse=reverseList.join('');
     return reverse;
 }
+
+function isPalindrome(str){
+    let rev=reverseStr(str);
+    return rev===str?true:false;
+}
